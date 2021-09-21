@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.example.mergeanimalsandflowers.presentation.home.HomePageState" />
+
+        <variable
+            name="vm"
+            type="com.example.mergeanimalsandflowers.presentation.home.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/background_color"
+        android:layoutDirection="ltr"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAnimalsAndFlowers"
+            visible="@{ vm.homePageState  instanceof HomePageState.DataFetched }"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="@dimen/_15sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingAnim"
+            visible="@{vm.homePageState instanceof HomePageState.Loading }"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading_anim" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMessage"
+            visible="@{vm.homePageState instanceof HomePageState.Error || vm.homePageState instanceof HomePageState.EmptyData }"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loadingAnim" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTryAgain"
+            visible="@{ vm.homePageState instanceof HomePageState.Error }"
+            android:onClick="@{ () -> vm.getAnimalsAndFlowers() }"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/tryAgain"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtMessage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.mergeanimalsandflowers.data.models.AnimalAndFlowerMergedModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        android:background="@color/background_color">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:layoutDirection="rtl"
+            app:sliderIndicatorRtlMode="on"
+            app:sliderAutoCycleEnabled="false"
+            app:sliderIndicatorSelectedColor="@android:color/white"
+            app:sliderIndicatorUnselectedColor="@android:color/darker_gray"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/one_radius_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCommonCount"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/bg_circle_light_red"
+            android:gravity="center"
+            android:text="@{ String.valueOf(item.commonChars.size()) }"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/largeHeader"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/viewBackground" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtNames"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="start"
+            animalAndFlowerName="@{item}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/largeHeader"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/txtCommonCount"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/viewBackground" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCommon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="start"
+            android:text="@string/commonChars"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/largeHeader"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtNames" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCommonValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="start"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/largeHeader"
+            commonChars="@{ item.commonChars }"
+            app:layout_constraintRight_toLeftOf="@id/txtCommon"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtCommon" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/txtCommon" >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/lorem"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/subHeader"/>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

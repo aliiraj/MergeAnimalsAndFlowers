@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+
+    <data>
+        <variable
+            name="imageUrl"
+            type="String" />
+    </data>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@{imageUrl}"
+        app:shapeAppearanceOverlay="@style/ShapeImageViewBottomRadius"/>
+
+</layout>
+

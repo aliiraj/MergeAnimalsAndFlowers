@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/bg_circle_red.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/bg_corners_rounded_edittext.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/bg_item.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/ic_more.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/ic_search.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/one_radius_white.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/activity_main.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/bg_corners_rounded_edittext.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/fragment_details.xml" value="0.25" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/fragment_home.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/include_default_toolbar.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/item_animal_flower.xml" value="0.25" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/item_slider.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/menu/menu_main.xml" value="0.24479166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
