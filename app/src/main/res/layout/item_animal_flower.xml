@@ -4,7 +4,7 @@
     <data>
         <variable
             name="item"
-            type="com.example.mergeanimalsandflowers.data.models.AnimalAndFlowerMergedModel" />
+            type="com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

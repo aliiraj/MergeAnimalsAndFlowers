@@ -2,10 +2,9 @@ package com.example.mergeanimalsandflowers.application
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
-import io.github.inflationx.calligraphy3.CalligraphyConfig
-import io.github.inflationx.calligraphy3.CalligraphyInterceptor
 import io.github.inflationx.viewpump.ViewPump
 import javax.inject.Inject
+
 
 @HiltAndroidApp
 class MyApplication : Application() {

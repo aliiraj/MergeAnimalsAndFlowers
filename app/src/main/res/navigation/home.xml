@@ -9,7 +9,7 @@
         android:id="@+id/homeFragment"
         android:name="com.example.mergeanimalsandflowers.presentation.home.HomeFragment"
         android:label="@string/list_animals_flowers"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
 
         <action
             android:id="@+id/action_homeFragment_to_detailsFragment"
@@ -18,6 +18,9 @@
             app:exitAnim="@android:anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
 
     </fragment>
 
@@ -26,11 +29,22 @@
         android:name="com.example.mergeanimalsandflowers.presentation.details.DetailsFragment"
         android:label="@string/details"
         tools:layout="@layout/fragment_details">
-
         <argument
-            android:name="animalAndFlowerMergedModel"
-            app:argType="com.example.mergeanimalsandflowers.data.models.AnimalAndFlowerMergedModel" />
-
+            android:name="mergedAnimalFlower"
+            app:argType="com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.mergeanimalsandflowers.presentation.search.SearchFragment"
+        android:label="@string/searchFa"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
     </fragment>
 
 </navigation>

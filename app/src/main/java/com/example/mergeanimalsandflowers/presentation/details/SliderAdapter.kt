@@ -2,14 +2,14 @@ package com.example.mergeanimalsandflowers.presentation.details
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.example.mergeanimalsandflowers.databinding.ItemSliderBinding
-import com.smarteist.autoimageslider.SliderViewAdapter
 
 
 class SliderAdapter(private val sliderItems: List<String>):
-    SliderViewAdapter<SliderAdapter.SliderViewHolder>() {
+    RecyclerView.Adapter<SliderAdapter.SliderViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup): SliderViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SliderViewHolder {
         val binding = ItemSliderBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return SliderViewHolder(binding)
     }
@@ -20,8 +20,8 @@ class SliderAdapter(private val sliderItems: List<String>):
         }
     }
 
-    override fun getCount() = sliderItems.size
+    override fun getItemCount() = sliderItems.size
 
     class SliderViewHolder(val itemSliderBinding: ItemSliderBinding) :
-        SliderViewAdapter.ViewHolder(itemSliderBinding.root)
+        RecyclerView.ViewHolder(itemSliderBinding.root)
 }

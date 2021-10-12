@@ -18,7 +18,7 @@ android {
         versionName "1.0"
 
         multiDexEnabled true
-
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -56,13 +56,6 @@ dependencies {
 
     implementation "androidx.multidex:multidex:2.0.1"
 
-
-//    implementation 'com.nineoldandroids:library:2.4.0'
-//    implementation 'com.daimajia.slider:library:1.1.5'
-    implementation 'com.github.smarteist:autoimageslider:1.4.0'
-
-
-
     //font
     implementation 'io.github.inflationx:calligraphy3:3.1.1'
     implementation 'io.github.inflationx:viewpump:2.0.3'
@@ -85,7 +78,7 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
 
     //// lifecycle
-    def lifecycle_version = "2.3.1"
+    def lifecycle_version = "2.4.0-alpha02"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
@@ -99,4 +92,13 @@ dependencies {
     //// hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
+
+    //// room
+    def room_version = "2.3.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    //// data store
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
 }

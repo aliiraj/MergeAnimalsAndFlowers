@@ -9,8 +9,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.mergeanimalsandflowers.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
-import android.view.Menu
-import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import com.example.mergeanimalsandflowers.R
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
@@ -39,11 +37,6 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         val appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
     }
 
     override fun onSupportNavigateUp(): Boolean {

@@ -6,17 +6,24 @@
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/bg_circle_red.xml" value="0.26510416666666664" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/bg_corners_rounded_edittext.xml" value="0.26510416666666664" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/bg_item.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/default_pager_dot.xml" value="0.26510416666666664" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/ic_more.xml" value="0.26510416666666664" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/ic_search.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/indicator_selector.xml" value="0.26510416666666664" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/one_radius_white.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/drawable/selected_pager_dot.xml" value="0.26510416666666664" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/activity_main.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/bg_corners_rounded_edittext.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/fragment_details.xml" value="0.25" />
-        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/fragment_home.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/fragment_home2.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/fragment_search.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/include_default_toolbar.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/item_animal_flower.xml" value="0.25" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/item_slider.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/layout/search_view.xml" value="0.5" />
         <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/menu/menu_main.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/ali/AndroidStudioProjects/MergeAnimalsAndFlowers/app/src/main/res/menu/menu_search.xml" value="0.24479166666666666" />
       </map>
     </option>
   </component>

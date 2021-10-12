@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
-import com.example.mergeanimalsandflowers.data.models.AnimalAndFlowerMergedModel
 import com.example.mergeanimalsandflowers.databinding.FragmentDetailsBinding
-import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType
+import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
+import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -24,7 +24,7 @@ class DetailsFragment : Fragment() {
     ): View {
         fragmentDetailsBinding = FragmentDetailsBinding.inflate(inflater, container, false).apply {
             lifecycleOwner = viewLifecycleOwner
-            item = args.animalAndFlowerMergedModel
+            item = args.mergedAnimalFlower
         }
         return fragmentDetailsBinding.root
     }
@@ -32,23 +32,19 @@ class DetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        handleSlider(args.animalAndFlowerMergedModel)
+        handleSlider(args.mergedAnimalFlower)
     }
 
     private fun handleSlider(animalAndFlowerMergedModel: AnimalAndFlowerMergedModel) {
         val sliderAdapter = SliderAdapter(getImageAnimalAndFlower(animalAndFlowerMergedModel))
         fragmentDetailsBinding.slider.apply {
-            setSliderAdapter(sliderAdapter)
-            setIndicatorAnimation(IndicatorAnimationType.WORM)
+            adapter = sliderAdapter
         }
+
+        TabLayoutMediator(fragmentDetailsBinding.indicator, fragmentDetailsBinding.slider)
+        { _, _ ->}.attach()
     }
 
     private fun getImageAnimalAndFlower(animalAndFlowerMergedModel: AnimalAndFlowerMergedModel) =
         listOf(animalAndFlowerMergedModel.animalImage, animalAndFlowerMergedModel.flowerImage)
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-    }
-
-
 }
