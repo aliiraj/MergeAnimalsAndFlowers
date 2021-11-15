@@ -1,7 +1,7 @@
 package com.example.mergeanimalsandflowers.di
 
 import androidx.databinding.library.BuildConfig
-import com.example.mergeanimalsandflowers.data.remote.apis.AnimalApis
+import com.example.data.remote.apis.AnimalApis
 import com.example.mergeanimalsandflowers.data.remote.apis.FlowerApis
 import com.example.mergeanimalsandflowers.utils.Constants.BASE_URL
 import com.google.gson.Gson

@@ -1,6 +1,6 @@
 package com.example.mergeanimalsandflowers.presentation.home
 
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.models.AnimalAndFlowerMergedModel
 
 sealed class HomePageState {
     object Initial: HomePageState()

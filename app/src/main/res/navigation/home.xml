@@ -30,8 +30,8 @@
         android:label="@string/details"
         tools:layout="@layout/fragment_details">
         <argument
-            android:name="mergedAnimalFlower"
-            app:argType="com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel" />
+            android:name="mergedModel"
+            app:argType="com.example.domain.models.AnimalAndFlowerMergedModel" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"

@@ -3,7 +3,7 @@
 
     <data>
 
-        <import type="com.example.mergeanimalsandflowers.utils.Resource" />
+        <import type="com.example.domain.utils.Resource" />
 
         <variable
             name="vm"

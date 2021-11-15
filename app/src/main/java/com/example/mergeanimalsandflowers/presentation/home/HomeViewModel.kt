@@ -2,11 +2,11 @@ package com.example.mergeanimalsandflowers.presentation.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
-import com.example.mergeanimalsandflowers.domain.usecases.GetAnimalAndFlowerMergedUseCase
+import com.example.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.usecases.GetAnimalAndFlowerMergedUseCase
 import com.example.mergeanimalsandflowers.utils.Constants
 import com.example.mergeanimalsandflowers.utils.ErrorHandler
-import com.example.mergeanimalsandflowers.utils.Resource
+import com.example.domain.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*
@@ -48,7 +48,7 @@ class HomeViewModel @Inject constructor(
                 if (result.data.isNullOrEmpty()){
                     HomePageState.Loading
                 } else {
-                    HomePageState.Refreshing(result.data)
+                    HomePageState.Refreshing(result.data!!)
                 }
             }
 
@@ -56,7 +56,7 @@ class HomeViewModel @Inject constructor(
                 if (result.data.isNullOrEmpty()){
                     HomePageState.EmptyData(Constants.NO_ITEM_FOUND)
                 } else {
-                    HomePageState.DataFetched(result.data)
+                    HomePageState.DataFetched(result.data!!)
                 }
             }
 

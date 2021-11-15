@@ -1,9 +1,9 @@
 package com.example.mergeanimalsandflowers.domain.usecases
 
-import app.cash.turbine.test
+import com.example.domain.usecases.GetAnimalAndFlowerMergedUseCase
 import com.example.mergeanimalsandflowers.domain.FakeMainRepository
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
-import com.example.mergeanimalsandflowers.utils.Resource
+import com.example.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.utils.Resource
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Test

@@ -10,8 +10,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.mergeanimalsandflowers.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.navigation.NavController
+import androidx.room.util.StringUtil
 import com.example.mergeanimalsandflowers.R
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
+import java.util.*
 
 
 @AndroidEntryPoint
@@ -47,4 +49,5 @@ class MainActivity : AppCompatActivity() {
     override fun attachBaseContext(newBase: Context?) {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase!!))
     }
+
 }

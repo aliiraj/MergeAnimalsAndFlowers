@@ -2,8 +2,8 @@ package com.example.mergeanimalsandflowers.presentation.search
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
-import com.example.mergeanimalsandflowers.domain.usecases.SearchAnimalAndFlowerMergedUseCase
+import com.example.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.usecases.SearchAnimalAndFlowerMergedUseCase
 import com.example.mergeanimalsandflowers.utils.Constants
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*

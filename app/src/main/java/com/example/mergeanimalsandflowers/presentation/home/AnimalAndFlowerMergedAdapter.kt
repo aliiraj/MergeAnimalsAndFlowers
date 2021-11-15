@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mergeanimalsandflowers.databinding.ItemAnimalFlowerBinding
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.models.AnimalAndFlowerMergedModel
 
 
 class AnimalAndFlowerMergedAdapter(val selectItem: (item: AnimalAndFlowerMergedModel) -> Unit) :

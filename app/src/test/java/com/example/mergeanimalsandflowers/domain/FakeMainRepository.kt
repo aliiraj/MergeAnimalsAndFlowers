@@ -1,8 +1,8 @@
 package com.example.mergeanimalsandflowers.domain
 
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.models.AnimalAndFlowerMergedModel
 import com.example.mergeanimalsandflowers.domain.repositories.MainRepository
-import com.example.mergeanimalsandflowers.utils.Resource
+import com.example.domain.utils.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import java.lang.NullPointerException

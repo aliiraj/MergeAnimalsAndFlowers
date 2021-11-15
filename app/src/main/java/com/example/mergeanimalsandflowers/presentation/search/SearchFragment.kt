@@ -10,7 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.mergeanimalsandflowers.R
 import com.example.mergeanimalsandflowers.databinding.FragmentSearchBinding
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.models.AnimalAndFlowerMergedModel
 import com.example.mergeanimalsandflowers.presentation.home.AnimalAndFlowerMergedAdapter
 import com.example.mergeanimalsandflowers.utils.Keyboard
 import dagger.hilt.android.AndroidEntryPoint

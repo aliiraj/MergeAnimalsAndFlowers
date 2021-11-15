@@ -9,7 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.mergeanimalsandflowers.R
 import com.example.mergeanimalsandflowers.databinding.FragmentHomeBinding
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.models.AnimalAndFlowerMergedModel
 import com.example.mergeanimalsandflowers.utils.ShowMessageUtil
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect

@@ -1,6 +1,5 @@
 package com.example.mergeanimalsandflowers.data.repositories
 
-import app.cash.turbine.test
 import com.example.mergeanimalsandflowers.data.local.FakeLocalDataSource
 import com.example.mergeanimalsandflowers.data.local.db.entities.AnimalAndFlowerMergedEntity
 import com.example.mergeanimalsandflowers.data.remote.FakeRemoteDataSource
@@ -8,12 +7,9 @@ import com.example.mergeanimalsandflowers.data.remote.dto.AnimalDto
 import com.example.mergeanimalsandflowers.data.remote.dto.FlowerDto
 import com.example.mergeanimalsandflowers.data.remote.dto.MainAnimalResponseDto
 import com.example.mergeanimalsandflowers.data.remote.dto.MainFlowerResponseDto
-import com.example.mergeanimalsandflowers.domain.FakeMainRepository
-import com.example.mergeanimalsandflowers.domain.mapper.MainRepositoryMapper
-import com.example.mergeanimalsandflowers.domain.usecases.GetAnimalAndFlowerMergedUseCase
-import com.example.mergeanimalsandflowers.utils.Resource
+import com.example.data.mapper.MainRepositoryMapper
+import com.example.domain.utils.Resource
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before
 import org.junit.Test

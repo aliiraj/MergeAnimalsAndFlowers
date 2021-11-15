@@ -3,7 +3,7 @@ package com.example.mergeanimalsandflowers.utils
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.models.AnimalAndFlowerMergedModel
 import com.google.android.material.imageview.ShapeableImageView
 
 

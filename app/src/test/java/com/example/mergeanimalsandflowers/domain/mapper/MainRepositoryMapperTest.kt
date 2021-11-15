@@ -1,7 +1,8 @@
 package com.example.mergeanimalsandflowers.domain.mapper
 
+import com.example.data.mapper.MainRepositoryMapper
 import com.example.mergeanimalsandflowers.data.local.db.entities.AnimalAndFlowerMergedEntity
-import com.example.mergeanimalsandflowers.domain.models.AnimalAndFlowerMergedModel
+import com.example.domain.models.AnimalAndFlowerMergedModel
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
