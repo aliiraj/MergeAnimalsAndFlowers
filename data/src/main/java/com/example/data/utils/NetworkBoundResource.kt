@@ -16,11 +16,10 @@ inline fun <ResultType> networkBoundResource(
     crossinline saveFetchResult: suspend (List<AnimalAndFlowerMergedEntity>) -> Unit,
     crossinline shouldFetch: suspend () -> Boolean = { true }
 ) = flow {
-    val data = query().first()
 
     val flow = if (shouldFetch()) {
 
-        emit(Resource.Loading(data))
+        emit(Resource.Loading(query().first()))
 
         try {
             fetchAnimal().zip(fetchFlower()){ animals, flowers ->
@@ -31,7 +30,9 @@ inline fun <ResultType> networkBoundResource(
             query().map { Resource.Error(throwable, it) }
         }
     } else {
-        query().map { Resource.Success(it) }
+        query().map {
+            Resource.Success(it)
+        }
     }
 
     emitAll(flow)
